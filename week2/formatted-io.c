@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int jumlahMahasiswa = 7;
+    int jumlahMahasiswa = 100;
     int hasilUjian[jumlahMahasiswa];
     char namaMahasiswa[jumlahMahasiswa][50]; // Menyimpan nama mahasiswa, dengan asumsi nama maksimal 50 karakter
 
