@@ -41,7 +41,7 @@ int main() {
     persentaseKelulusan = (float)jumlahLulus / jumlahMahasiswa * 100;
     printf("Persentase kelulusan: %.1f%%\n", persentaseKelulusan);
 
-    if (jumlahLulus > (0.8 * jumlahMahasiswa)) {
+    if (persentaseKelulusan > 80) {
         printf("Kelulusan kelas telah mencapai target!\n");
     }
 
