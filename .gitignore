@@ -51,5 +51,8 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Ignore compiled file
 week2/*
 !week2/*.c
+week3/*
+!week3/*.c
