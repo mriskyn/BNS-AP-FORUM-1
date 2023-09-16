@@ -5,7 +5,7 @@ int main()
     int m, n, p, q, c, d, k, sum = 0, check;
 
     // Input Matriks Pertama
-    printf("Masukkan jumlah baris dan kolom matriks pertama: ");
+    printf("Masukkan jumlah baris dan kolom matriks pertama\t\t: ");
 
     // Error check integer
     if (scanf("%d %d", &m, &n) < 2)
@@ -17,7 +17,7 @@ int main()
     int first[m][n];
 
     // Input Elemen elemen matriks pertama
-    printf("Masukkan elemen-elemen matriks pertama:\n");
+    printf("Masukkan elemen-elemen matriks pertama (%dx%d) (a,b,c,d)\t:\n", m, n);
 
     for (c = 0; c < m; c++)
     {
@@ -33,7 +33,7 @@ int main()
     }
 
     // Input Matriks Kedua
-    printf("Masukkan jumlah baris dan kolom matriks kedua: ");
+    printf("Masukkan jumlah baris dan kolom matriks kedua\t\t: ");
 
     // Error check integer
     if (scanf("%d %d", &p, &q) < 2)
@@ -53,7 +53,7 @@ int main()
         int multiply[m][q];
 
         // Input Elemen elemen matriks kedua
-        printf("Masukkan elemen-elemen matriks kedua:\n");
+        printf("Masukkan elemen-elemen matriks kedua(%dx%d) (e,f,g,h)\t:\n", p, q);
 
         for (c = 0; c < p; c++)
         {
