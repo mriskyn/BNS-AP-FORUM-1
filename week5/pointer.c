@@ -22,10 +22,10 @@ void swapByValue(int num1, int num2)
 }
 
 // Fungsi pass-by-address
-void swadByAdrress(int *num1, int *num2)
+void swapByAddress(int *num1, int *num2)
 {
   int temp = *num1;
-  *num1 = num2;
+  *num1 = *num2;
   *num2 = temp;
 }
 
@@ -35,18 +35,22 @@ int main()
   int num1 = 55;
   int num2 = 77;
   printf("PASS BY VALUE\n");
-  printf("Nilai num sebelum pemanggilan fungsi: %d\n", num1);
+  printf("Nilai num1 sebelum pemanggilan fungsi: %d\n", num1);
+  printf("Nilai num2 sebelum pemanggilan fungsi: %d\n\n", num2);
 
   swapByValue(&num1, &num2); // Memanggil fungsi pass-by-value
 
-  printf("Nilai num setelah pemanggilan fungsi: %d\n", num1);
+  printf("Nilai num1 setelah pemanggilan fungsi: %d\n", num1);
+  printf("Nilai num2 setelah pemanggilan fungsi: %d\n", num2);
 
   printf("\n\nPASS BY REFERENCE\n");
-  printf("Nilai num sebelum pemanggilan fungsi: %d\n", num2);
+  printf("Nilai num1 sebelum pemanggilan fungsi: %d\n", num1);
+  printf("Nilai num2 sebelum pemanggilan fungsi: %d\n\n", num2);
 
   swapByAddress(&num1, &num2); // Memanggil fungsi pass-by-address dengan menyertakan alamat num
 
-  printf("Nilai num setelah pemanggilan fungsi: %d\n", num2);
+  printf("Nilai num1 setelah pemanggilan fungsi: %d\n", num1);
+  printf("Nilai num2 setelah pemanggilan fungsi: %d\n", num2);
 
   return 0;
 }
