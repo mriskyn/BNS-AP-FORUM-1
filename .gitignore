@@ -58,5 +58,7 @@ week3/*
 !week3/*.c
 week4/*
 !week4/*.c
+week5/*
+!week5/*.c
 
 .vscode/
